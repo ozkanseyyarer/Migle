@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:text="MIGLE"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center"
+                android:text="@string/aciklama"
+                android:textColor="@color/colorLightText"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dashboard_item_1_background">
+                        
+                        <View
+                            android:layout_width="80dp"
+                            android:layout_height="0sp"
+                            android:background="@drawable/end_view_background"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageIcon1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/icon_background"
+                            android:contentDescription="@string/app_name"
+                            android:padding="11dp"
+                            android:src="@drawable/anilarim_pasta"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/textItem1Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="ANILARIM"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon1"
+                            app:layout_constraintTop_toTopOf="@id/imageIcon1"/>
+                        
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/anilarim_aciklama"
+                            android:textColor="@color/colorLightText"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon1"
+                            android:layout_marginStart="10dp"
+                            />
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dashboard_item_2_background">
+
+                        <View
+                            android:layout_width="80dp"
+                            android:layout_height="0sp"
+                            android:background="@drawable/end_view_background"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <ImageView
+                            android:layout_marginBottom="12dp"
+                            android:id="@+id/imageIcon2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/icon_background"
+                            android:contentDescription="@string/app_name"
+                            android:padding="1dp"
+                            android:src="@drawable/harita"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/textItem2Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="GEZDİĞİM YERLER"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon2"
+                            app:layout_constraintTop_toTopOf="@id/imageIcon2"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/gezdigim_yerler_aciklama"
+                            android:textColor="@color/colorLightText"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon2"
+                            android:layout_marginStart="10dp"
+                            />
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dashboard_item_3_background">
+
+                        <View
+                            android:layout_width="80dp"
+                            android:layout_height="0sp"
+                            android:background="@drawable/end_view_background"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageIcon3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/icon_background"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/kitap"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/textItem3Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="OKUDUĞUM KİTAPLAR"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon3"
+                            app:layout_constraintTop_toTopOf="@id/imageIcon3"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/anilarim_aciklama"
+                            android:textColor="@color/colorLightText"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon3"
+                            android:layout_marginStart="10dp"
+                            />
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dashboard_item_4_background">
+
+                        <View
+                            android:layout_width="80dp"
+                            android:layout_height="0sp"
+                            android:background="@drawable/end_view_background"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageIcon4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/icon_background"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/film"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/textItem4Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="İZLEDİĞİM FİLMLER"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon4"
+                            app:layout_constraintTop_toTopOf="@id/imageIcon4"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/izledigim_fimler_aciklama"
+                            android:textColor="@color/colorLightText"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageIcon4"
+                            android:layout_marginStart="10dp"
+                            />
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/colorAccent"
+
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
