@@ -1,68 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+android:background="#AF88AF"
+
+    android:layout_height="match_parent"
     tools:context=".AddBookActivity">
 
-
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave_2"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_centerInParent="true"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
 
             <ImageView
-                android:layout_width="150dp"
-                android:src="@drawable/add_image"
+                android:id="@+id/activity_add_book_imageViewKitapResmi"
+                android:layout_width="240dp"
+                android:layout_height="300dp"
                 android:scaleType="fitXY"
-                android:layout_height="150dp"
-                android:id="@+id/activity_add_book_imageViewKitapResmi"/>
+                android:src="@drawable/add_image" />
 
             <EditText
-                android:layout_marginTop="50dp"
-                android:layout_width="350dp"
                 android:id="@+id/activity_add_book_editTextKitapIsmi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
                 android:hint="Kitap ismini giriniz"
-                android:textAlignment="center"
-                android:layout_height="50dp"/>
+                android:textAlignment="center" />
 
             <EditText
-                android:layout_marginTop="20dp"
-                android:layout_width="350dp"
                 android:id="@+id/activity_add_book_editTextKitapYazari"
-                android:hint="Yazar ismini giriniz"
-                android:textAlignment="center"
-                android:layout_height="50dp"/>
-
-            <EditText
-                android:layout_marginTop="20dp"
                 android:layout_width="350dp"
-                android:inputType="textMultiLine"
-                android:id="@+id/activity_add_book_editTextKitapOzeti"
-                android:hint="Kitap özetini giriniz"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Yazar ismini giriniz"
+                android:textAlignment="center" />
 
-                android:layout_height="150dp"/>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/activity_add_book_editTextKitapOzeti"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Kitap özetini giriniz"
+
+                    android:inputType="textMultiLine" />
+
+
+            </ScrollView>
+
 
             <Button
+                android:id="@+id/kitapKaydet"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:textSize="19sp"
-                android:textStyle="bold"
-                android:textAllCaps="false"
-                android:layout_marginTop="25dp"
-                android:id="@+id/kitapKaydet"
-                android:enabled="false"
                 android:layout_gravity="center"
-                android:text="KAYDET"/>
+                android:layout_marginTop="25dp"
+                android:enabled="false"
+                android:text="KAYDET"
+                android:textAllCaps="false"
+                android:textSize="19sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

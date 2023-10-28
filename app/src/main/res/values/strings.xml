@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Migle</string>
+    <string name="app_name">Mingle</string>
     <string name="aciklama">Anıları Kolay ve Zahmetsizce Saklamanın Yolu</string>
     <string name="anilarim_aciklama">Anılarınızla ilgili açıklama, fotoğraf, konum ve tarih ekleyebilirsiniz.</string>
     <string name="gezdigim_yerler_aciklama">Gezdiğiniz yerlerle ilgili açıklama, fotoğraf, konum ve tarih ekleyebilirsiniz.</string>

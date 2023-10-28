@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
@@ -27,7 +28,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
                 android:gravity="center"
-                android:text="MIGLE"
+                android:text="MINGLE"
                 android:textColor="@color/colorWhite"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -98,7 +99,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="80dp"
-                            android:text="ANILARIM"
+                            android:text="ANILAR"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
                             android:textStyle="bold"
