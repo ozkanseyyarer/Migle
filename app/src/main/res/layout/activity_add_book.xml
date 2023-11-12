@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-android:background="#AF88AF"
-
     android:layout_height="match_parent"
+    android:background="#AF88AF"
     tools:context=".AddBookActivity">
 
-<View
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/wave_2"/>
+
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wave_2" />
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center"
-            android:orientation="vertical">
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/activity_add_book_imageViewKitapResmi"
@@ -51,7 +47,6 @@ android:background="#AF88AF"
                 android:layout_marginTop="20dp"
                 android:hint="Yazar ismini giriniz"
                 android:textAlignment="center" />
-
             <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -84,4 +79,4 @@ android:background="#AF88AF"
         </LinearLayout>
     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
